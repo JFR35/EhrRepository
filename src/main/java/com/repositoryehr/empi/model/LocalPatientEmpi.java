@@ -2,10 +2,8 @@ package com.repositoryehr.empi.model;
 
 import jakarta.persistence.*;
 import jdk.jfr.Name;
-import org.ehrbase.openehr.sdk.generator.commons.annotations.Entity;
-import org.springframework.boot.autoconfigure.web.WebProperties;
-
 import java.time.LocalDateTime;
+import jakarta.persistence.Entity;
 
 @Entity
 @Table(name = "local_patient_empi")
