@@ -57,8 +57,53 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>com.nedap.healthcare.archie</groupId>
+			<artifactId>openehr-rm</artifactId>
+			<version>3.13.1</version>
+		</dependency>
 
-	</dependencies>
+		<dependency>
+			<groupId>org.ehrbase.openehr.sdk</groupId>
+			<artifactId>response-dto</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ehrbase.openehr.sdk</groupId>
+			<artifactId>web-template</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ehrbase.openehr.sdk</groupId>
+			<artifactId>opt-1.4</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ehrbase.openehr.sdk</groupId>
+			<artifactId>client</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ehrbase.openehr.sdk</groupId>
+			<artifactId>serialisation</artifactId>
+			<version>2.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>1.5.5.Final</version>
+		</dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
