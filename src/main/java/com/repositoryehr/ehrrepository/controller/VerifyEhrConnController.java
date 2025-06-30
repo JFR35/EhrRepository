@@ -1,7 +1,7 @@
 package com.repositoryehr.ehrrepository.controller;
 
 
-import com.repositoryehr.ehrrepository.service.VerifyEhrConn;
+import com.repositoryehr.ehrrepository.service.VerifyEhrConnectionService;
 import com.repositoryehr.ehrrepository.service.exception.EhrbaseConnectionException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/ehr")
 public class VerifyEhrConnController {
 
-    private final VerifyEhrConn verifyEhrConn;
+    private final VerifyEhrConnectionService verifyEhrConn;
 
-    public VerifyEhrConnController(VerifyEhrConn verifyEhrConn) {
+    public VerifyEhrConnController(VerifyEhrConnectionService verifyEhrConn) {
         this.verifyEhrConn = verifyEhrConn;
     }
 
