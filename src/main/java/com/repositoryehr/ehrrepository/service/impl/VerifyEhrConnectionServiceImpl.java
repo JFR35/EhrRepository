@@ -1,6 +1,6 @@
 package com.repositoryehr.ehrrepository.service.impl;
 
-import com.repositoryehr.ehrrepository.service.VerifyEhrConn;
+import com.repositoryehr.ehrrepository.service.VerifyEhrConnectionService;
 import com.repositoryehr.ehrrepository.service.exception.EhrbaseConnectionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,16 +9,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class VerifyEhrConnImpl implements VerifyEhrConn {
+public class VerifyEhrConnectionServiceImpl implements VerifyEhrConnectionService {
 
-    private static final Logger logger = LoggerFactory.getLogger(VerifyEhrConn.class);
+    private static final Logger logger = LoggerFactory.getLogger(VerifyEhrConnectionService.class);
 
     @Value("${ehrbase.ping-endpoint}")
     private String pingEndpoint;
 
     private final RestTemplate restTemplate;
 
-    public VerifyEhrConnImpl(RestTemplate restTemplate) {
+    public VerifyEhrConnectionServiceImpl(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
