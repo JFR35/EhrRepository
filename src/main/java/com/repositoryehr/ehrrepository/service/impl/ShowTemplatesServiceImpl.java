@@ -1,6 +1,6 @@
 package com.repositoryehr.ehrrepository.service.impl;
 
-import com.repositoryehr.ehrrepository.dto.TemplateInfoDTO;
+import com.repositoryehr.ehrrepository.model.dto.TemplateInfoDTO;
 import com.repositoryehr.ehrrepository.service.ShowTemplatesService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

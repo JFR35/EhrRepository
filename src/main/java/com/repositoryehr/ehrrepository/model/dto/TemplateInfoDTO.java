@@ -1,4 +1,4 @@
-package com.repositoryehr.ehrrepository.dto;
+package com.repositoryehr.ehrrepository.model.dto;
 
 public class TemplateInfoDTO {
     private String templateId;
