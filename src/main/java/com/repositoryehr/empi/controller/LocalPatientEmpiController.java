@@ -14,7 +14,7 @@ public class LocalPatientEmpiController {
         this.localPatientService = localPatientService;
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public PatientLocalEmpiResponseDto createNewPatient(@RequestParam String nationalId) {
         return localPatientService.registerNewPatient(nationalId);
     }
